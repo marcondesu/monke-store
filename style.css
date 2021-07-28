@@ -1,0 +1,113 @@
+/* ============= GERAL ============= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {    
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.gradient {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    width: 100vw;
+
+    background: linear-gradient(45deg, #25D366, #6DE991, #4AB484, #128C7B);
+    background-size: 400% 400%;
+
+    animation: background-gradient 10s ease infinite;
+}
+
+@keyframes background-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* ============= MAIN ============= */
+
+main {
+    background: #fff;
+
+    width: min(450px, 40vw);
+    height: min(500px, 60vh);
+
+    border-radius: 0.5rem;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    display: block;
+}
+
+h1 {
+    font-weight: 400;
+
+    padding: 1.4rem 0 3rem 2rem;
+
+    width: 100%;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+/*input {
+    -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+          
+    width: 100%;
+    height: min(50px, 6vh);
+
+    border: 1px solid #ccc;
+    border-radius: .19rem;
+    box-sizing: border-box;
+    display: block;
+
+    margin-bottom: .75rem;
+}*/
+
+label {
+    font-size: 1rem;
+    color: #111;
+}
+
+.element {
+    display: grid;
+    width: 20vw;
+
+
+
+    padding-bottom: 2rem;
+}
+
+.element input {
+    border: 2px solid white;
+    border-radius: .35rem;
+
+    height: 30px;
+}
+
+.element >input::selection {
+    border: 20px;
+}
+
+
+#submit {
+    margin-top: 3rem;
+}
